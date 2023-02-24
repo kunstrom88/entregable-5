@@ -1,8 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import "../store/slices/trainer.slice.js";
-import { setTrainerGlobal } from "../store/slices/Trainer.slice";
+import { setTrainerGlobal } from "../store/slices/trainer.slice";
 import "../components/Pokedex/styles/home.css";
 const Home = () => {
   const dispatch = useDispatch();
