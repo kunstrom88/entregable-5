@@ -1,0 +1,24 @@
+.pagination__list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  font-family: "Press Start 2P";
+}
+
+.pagination__item {
+  width: 40px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.page__active {
+  background-color: #d93f3f;
+  color: white;
+}

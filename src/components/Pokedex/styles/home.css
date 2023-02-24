@@ -1,0 +1,148 @@
+.home__container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  font-family: "Press Start 2P";
+}
+
+.home__title {
+  margin-top: 150px;
+  margin-bottom: 20px;
+  color: black;
+  width: min(calc(100%));
+  border-right: 4px solid;
+  width: 36ch;
+  animation: escrito 2s steps(36), blink 10s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes escrito {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.home__btn {
+  position: relative;
+  width: 200px;
+  height: 60px;
+  margin-top: 20px;
+  padding: 1 rem;
+  border-radius: 0.2rem;
+  border: 1px solid #aaaa;
+  color: white;
+  background-color: #d93f3f;
+  transition: filter 100ms ease;
+  font-size: 1.4rem;
+  font-family: "Press Start 2P";
+  animation: wiggle 2s linear infinite;
+}
+
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+.home__input {
+  width: min(500px, calc(100%));
+  height: 60px;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 100;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+  border: 1px solid #aaaa;
+  background-color: rgb(208, 226, 237);
+  font-family: "Press Start 2P";
+}
+
+.home__footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.home__footer__red {
+  height: 100px;
+  background-color: #dd1a1a;
+  position: relative;
+}
+
+.home__footer__img {
+  width: min(400px, calc(100% - 40px));
+  position: relative;
+  bottom: -80px;
+  left: 40px;
+  z-index: 2;
+}
+
+.home__footer__black {
+  height: 50px;
+  background-color: #0c0c0c;
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  .home__title {
+    text-align: center;
+    width: 500px;
+    font-size: 1rem;
+  }
+  .home__title {
+    padding-left: 50px;
+  }
+  .home__input {
+    max-width: 200px;
+    font-family: "Press Start 2P";
+  }
+  .home__form {
+    padding-left: 50px;
+  }
+  .home__btn {
+    max-width: 200px;
+    font-family: "Press Start 2P";
+  }
+}
+
+@media (max-width: 700px) {
+  .home__title {
+    font-size: 0.75rem;
+  }
+
+  @media (max-width: 570px) {
+    .home__title {
+      font-size: 0.45rem;
+    }
+    .home__btn {
+      max-width: 100px;
+      font-size: 0.7rem;
+    }
+  }
+}

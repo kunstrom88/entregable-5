@@ -1,0 +1,433 @@
+.poke-card {
+  width: 100%;
+  max-width: 330px;
+  border-radius: 0.8rem;
+  border: 0.4rem solid #87aa3b;
+  font-family: "Press Start 2P";
+  cursor: pointer;
+}
+
+.poke-card__header {
+  background-color: #aaa;
+  height: 120px;
+  position: relative;
+}
+
+.poke-card__sprite {
+  width: 50%;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: transform 1s linear;
+}
+
+.poke-card__sprite:hover {
+  transform: scale(1.2);
+}
+
+.poke-card__body {
+  padding-top: 2.6rem;
+}
+
+.poke-card__name {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.poke-card__types-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.poke-card__info {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  opacity: 0.7;
+  margin-top: 4px;
+}
+
+.poke-card__type:nth-child(2) {
+  position: relative;
+  font-weight: 300;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+.poke-card__type:nth-child(2)::before {
+  content: "/";
+  position: absolute;
+  left: -15px;
+}
+
+.poke-card__footer {
+  padding: 1.1rem 1rem 2rem;
+}
+
+.poke-card__stats-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 25px 5px;
+}
+
+.poke-card__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4 rem;
+}
+
+.poke-card__label {
+  text-transform: uppercase;
+  opacity: 0.7;
+  font-weight: 200;
+  font-size: 0.6rem;
+}
+
+.bg-grass {
+  background-image: linear-gradient(
+    178.92deg,
+    #7ec6c5 0.92%,
+    #abdac6 47.96%,
+    #cae099 99.08%
+  );
+}
+
+.border-grass {
+  border-radius: 10px;
+  border-color: #b1dbbc;
+}
+
+.color-grass {
+  color: #416460;
+}
+
+.bg-fire {
+  background: linear-gradient(
+    181.51deg,
+    #735259 -6.44%,
+    #bc6b7c 121.95%,
+    #7c3f4c 186.11%
+  );
+}
+
+.border-fire {
+  border-color: #f96d6f;
+}
+
+.color-fire {
+  color: #e75c35;
+}
+
+.bg-water {
+  background-image: linear-gradient(
+    179.57deg,
+    #133258 -70.14%,
+    #1479fb 56.16%,
+    #82b2f1 214.85%
+  );
+}
+
+.border-water {
+  border-color: #1479fb;
+}
+
+.color-water {
+  color: #1479fb;
+}
+
+.bg-bug {
+  background-image: linear-gradient(
+    177.56deg,
+    #62db60 -58.92%,
+    #3bb039 16.57%,
+    #aaffa8 209.53%
+  );
+}
+
+.border-bug {
+  border-color: #4ab648;
+}
+
+.color-bug {
+  color: #4ab648;
+}
+
+.bg-fighting {
+  background-image: linear-gradient(
+    176.83deg,
+    #96402a -8.78%,
+    #f1613c 169.09%,
+    #cb735d 242.33%
+  );
+}
+
+.border-fighting {
+  border-color: #96402a;
+}
+
+.color-fighting {
+  color: #96402a;
+}
+
+.bg-poison {
+  background-image: linear-gradient(
+    177.03deg,
+    #5b3184 -11.97%,
+    #a564e3 71.28%,
+    #ce9bff 135.64%
+  );
+}
+
+.border-poison {
+  border-color: #a564e3;
+}
+
+.color-poison {
+  color: #a564e3;
+}
+
+.bg-rock {
+  background-image: linear-gradient(
+    177.03deg,
+    #7e7e7e -11.97%,
+    #8d8d94 57.49%,
+    #d3d3d3 135.64%
+  );
+}
+
+.border-rock {
+  border-color: #8d8d94;
+}
+
+.color-rock {
+  color: #8d8d94;
+}
+
+.bg-ground {
+  background-image: linear-gradient(
+    179.75deg,
+    #654008 -19.96%,
+    #895c1a 43.67%,
+    #d69638 138.4%
+  );
+}
+
+.border-ground {
+  border-color: #895c1a;
+}
+
+.color-ground {
+  color: #895c1a;
+}
+
+.bg-flying {
+  background-image: linear-gradient(
+    176.83deg,
+    #877701 -8.78%,
+    #beb14c 169.09%,
+    #dcd7b4 242.33%
+  );
+}
+
+.border-flying {
+  border-color: #beb14c;
+}
+
+.color-flying {
+  color: #beb14c;
+}
+
+.bg-ghost {
+  background-image: linear-gradient(
+    177.03deg,
+    #323569 -11.97%,
+    #454aa8 57.49%,
+    #787dda 135.64%
+  );
+}
+
+.border-ghost {
+  border-color: #454aa8;
+}
+
+.color-ghost {
+  color: #454aa8;
+}
+
+.bg-steel {
+  background-image: linear-gradient(
+    179.75deg,
+    #5e736c -19.96%,
+    #728881 43.67%,
+    #a8a8a8 138.4%
+  );
+}
+
+.border-steel {
+  border-color: #728881;
+}
+
+.color-steel {
+  color: #728881;
+}
+
+.bg-electric {
+  background-image: linear-gradient(
+    179.75deg,
+    #0c1395 -19.96%,
+    #2b319b 43.67%,
+    #7075d9 138.4%
+  );
+}
+
+.border-electric {
+  border-color: #2b319b;
+}
+
+.color-electric {
+  color: #2b319b;
+}
+
+.bg-psychic {
+  background-image: linear-gradient(
+    176.83deg,
+    #900303 -8.78%,
+    #e52d2d 169.09%,
+    #f58989 242.33%
+  );
+}
+
+.border-psychic {
+  border-color: #e52d2d;
+}
+
+.color-psychic {
+  color: #e52d2d;
+}
+
+.bg-ice {
+  background-image: linear-gradient(
+    177.03deg,
+    #6fbedf -11.97%,
+    #64cbf5 47.77%,
+    #bdebfe 136.72%
+  );
+}
+
+.border-ice {
+  border-color: #64cbf5;
+}
+
+.color-ice {
+  color: #64cbf5;
+}
+
+.bg-dragon {
+  background-image: linear-gradient(
+    179.75deg,
+    #478a93 -19.96%,
+    #56a4ae 43.67%,
+    #a2bec1 138.4%
+  );
+}
+
+.border-dragon {
+  border-color: #56a4ae;
+}
+
+.color-dragon {
+  color: #56a4ae;
+}
+
+.bg-dark {
+  background-image: linear-gradient(
+    177.03deg,
+    #030706 -11.97%,
+    #0d1211 57.49%,
+    #5a5e5d 135.64%
+  );
+}
+
+.border-dark {
+  border-color: #0d1211;
+}
+
+.color-dark {
+  color: #0d1211;
+}
+
+.bg-fairy {
+  background-image: linear-gradient(
+    179.75deg,
+    #971b45 -19.96%,
+    #c23867 43.67%,
+    #cd7d98 138.4%
+  );
+}
+
+.border-fairy {
+  border-color: #c23867;
+}
+
+.color-fairy {
+  color: #c23867;
+}
+
+.bg-unknown {
+  background-image: linear-gradient(
+    176.83deg,
+    #2d2c2c -8.78%,
+    #696767 169.09%,
+    #ededed 242.33%
+  );
+}
+
+.border-unknown {
+  border-color: #696767;
+}
+
+.color-unknown {
+  color: #696767;
+}
+
+.bg-shadow {
+  background-image: linear-gradient(
+    176.83deg,
+    #1a101b -8.78%,
+    #4f3353 169.09%,
+    #df8dea 242.33%
+  );
+}
+
+.border-shadow {
+  border-color: #4f3353;
+}
+
+.color-shadow {
+  color: #4f3353;
+}
+
+.bg-normal {
+  background-image: linear-gradient(
+    181.51deg,
+    #735259 -6.44%,
+    #bc6b7c 121.95%,
+    #7c3f4c 186.11%
+  );
+}
+
+.border-normal {
+  border-color: #bc6b7c;
+}
+
+.color-normal {
+  color: #bc6b7c;
+}
